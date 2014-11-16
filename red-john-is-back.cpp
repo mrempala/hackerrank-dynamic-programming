@@ -14,7 +14,7 @@ int main() {
         solTable[i]=solTable[i-1]+solTable[i-4];
     }
 
-    //Sieve of Eratosthenes for up to 220,000 (Solution at 40 was ~217,287) 
+    //Sieve of Eratosthenes for up to 220,000 (Solution at 40 was 217,287) 
     vector<bool> primes(220000,1);
     primes[0]=false;primes[1]=false;
     for(int i=0; i<(int)sqrt((double)220000); i++){
